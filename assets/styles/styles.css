@@ -15,11 +15,12 @@ header{
     background-color: #163F52;
     width: 100%;
     height: 80px;
-    position: sticky;
+    position: fixed;
     top:0;
     display: flex;
     justify-content: space-between;
     padding: 0px 16% 0px;
+    z-index: 1;
 }
 
 nav ul{
@@ -54,6 +55,7 @@ li a.active{
 }
 /*Seccion Home o Inicio*/
 section.inicio{
+    margin-top: 80px;
     background-image: url("assets/images/Onda.png");
     background-color: #163F52;
     background-position: bottom left;
@@ -192,10 +194,20 @@ h2.serviciosh2{
 .boxC img{
     width: 280px;
 }
-
-
-.boxC h2{
-    padding-right: 50%;
+.boxComo img{
+    width: 280px;
+}
+.boxComo{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 15px;
+}
+.boxComo h3{
+    padding-right: 52%;
     text-align: left;
     position: absolute;
     top: 250px;
@@ -205,6 +217,15 @@ h2.serviciosh2{
 
 }
 
+.boxComo p{
+    text-align: left;
+    color: white;
+    top: 260px;
+    left: 100%;
+    padding-left: 55%;
+}
+
+
 .boxC h3{
     text-align: left;
     position: absolute;
@@ -213,14 +234,6 @@ h2.serviciosh2{
     font-size: 30px;
     color:white;
     padding-right: 10%;
-}
-
-.boxC label{
-    text-align: center;
-    color: white;
-    top: 260px;
-    left: 100%;
-    padding-left: 55%;
 }
 
 .boxC p{
@@ -286,11 +299,17 @@ h2.serviciosh2{
 }
 
 .subComunidad{
-    font-weight: bold;
     text-align: center;
     padding-bottom: 2rem;
     padding: 3rem 0;
     scroll-margin-top: 78px;
+    color: white;
+}
+
+.subComunidad h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
     color: white;
 }
 
@@ -327,6 +346,7 @@ h2.serviciosh2{
     border-radius: 15px;
     float: right;
     flex-grow: 1;
+
 }
 
 .boxC1 img{
@@ -337,8 +357,9 @@ h2.serviciosh2{
 
 
 .boxC1, .boxC2 h2{
-
-    color: white;
+    text-align: center;
+    color: black;
+    border-radius: 15px;
 }
 
 .boxC2 img{
@@ -436,7 +457,7 @@ h2.serviciosh2{
 }
 
 
-.recomendaciones{
+.recomendaciones h1, h2{
 
     padding: 60px;
     position: relative;
@@ -444,11 +465,11 @@ h2.serviciosh2{
     height: auto;
     background-color: #ffffff;
     scroll-margin-top: 78px;
-
-    display: flex;
+    color: black;
     justify-content: center;
     align-items: center;
 }
+
 
 
 
@@ -503,10 +524,11 @@ footer li{
     margin-right: 1rem;
 }
 .footer-creds{
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
-    color: #576171;
+    padding: 1rem;
+    color: #0f1011;
     font-size: .9rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -519,7 +541,7 @@ footer li{
     padding-right: 1rem;
 }
 .legal-creds ul a{
-    color: #576171;
+    color: #0f1011;
     font-size: .9rem;
 }
 
@@ -551,7 +573,7 @@ footer li{
     color: rgb(255, 255, 255);
     padding: 3rem 0;
     scroll-margin-top: 78px;
-    font-size: 15px;
+    font-size: 35px;
 }
 
 .subtitulo{
@@ -560,7 +582,7 @@ footer li{
     color: rgb(255, 255, 255);
     padding: 3rem 0;
     scroll-margin-top: 78px;
-    font-size: 40px;
+    font-size: 20px;
 }
 .texto{
     font-weight: bold;
