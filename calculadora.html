@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/styles/style_calendario.css" type="text/css">
-    <title>Title</title>
+    <link rel="stylesheet" href="assets/styles/style_calculadora.css" type="text/css">
+    <title>Calculadora</title>
 </head>
 <body>
 <div class="container">
@@ -22,15 +22,15 @@
                 </a>
             </li>
 
-            <li class="hovered">
-                <a href="#">
+            <li>
+                <a href="calendario.html">
                     <img src="assets/images/calendario_hover.png" class="icon">
                     <span class="title">Calendario</span>
                 </a>
             </li>
 
-            <li>
-                <a href="calculadora.html">
+            <li class="hovered">
+                <a href="#">
                     <img src="assets/images/calculadora.png" class="icon">
                     <span class="title">Calculadora</span>
                 </a>
@@ -56,35 +56,39 @@
             </div>
         </div>
         <div class="content">
-            <div class="calendar">
-                <div class="header">
-                    <button id="prev-btn">&lt;</button>
-                    <span id="month-year"></span>
-                    <button id="next-btn">&gt;</button>
-                </div>
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Domingo</th>
-                        <th>Lunes</th>
-                        <th>Martes</th>
-                        <th>Miércoles</th>
-                        <th>Jueves</th>
-                        <th>Viernes</th>
-                        <th>Sábado</th>
-                    </tr>
-                    </thead>
-                    <tbody id="calendar-body"></tbody>
-                </table>
-            </div>
-            <div class="recordatorio" id="recordatorio">
-                <div ><img src="assets/images/img10.png" class="imagen"></div>
-                <div class="texto"><h3>Hoy se programo un cobro de cuota</h3></div>
+            <div class="calculator">
+                <div class="card-title text-center">
+                    <p>Calculadora</p></div>
+                <input type="text" id="result" disabled>
+                <br>
+                <input type="button" value="(">
+                <input type="button" value=")">
+                <input type="button" value="%">
+                <input type="button" value="AC">
+                <br>
+                <input type="button" value="7">
+                <input type="button" value="8">
+                <input type="button" value="9">
+                <input type="button" value="/">
+                <br>
+                <input type="button" value="4">
+                <input type="button" value="5">
+                <input type="button" value="6">
+                <input type="button" value="x">
+                <br>
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="-">
+                <br>
+                <input type="button" value="0">
+                <input type="button" value=".">
+                <input type="button" value="=">
+                <input type="button" value="+">
+
             </div>
         </div>
     </div>
 </div>
-
-<script src="assets/scripts/calendario.js"></script>
 </body>
 </html>
